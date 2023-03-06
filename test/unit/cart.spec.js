@@ -18,7 +18,7 @@ describe('Shopping cart', function() {
         "price":5});
     });
 
-    it('adds a sticker to the cart', function() {
+    it.only('adds a sticker to the cart', function() {
       cart.add(product, product.id);
       assert.equal(cart.totalPrice, 5);
     });
